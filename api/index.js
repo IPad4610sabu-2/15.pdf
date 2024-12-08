@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
   try {
     let decodedUrl = Buffer.from(req.query.url, "base64").toString("ascii");
 
-    if (/magnet:\?xt=urn:[a-z0-9]+:[a-zA-Z0-9]*/.test(decodedUrl)) {
+    if (/magnet:/15.pdf/?xt=urn:[a-z0-9]+:[a-zA-Z0-9]*/.test(decodedUrl)) {
       return res.redirect(
         `https://magnet-api.herokuapp.com/?url=${Buffer.from(
           decodedUrl
