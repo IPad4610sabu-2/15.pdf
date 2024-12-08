@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Read-only access to websites.",
   "main": "index.js",
+  "start": "yarn start",
   "scripts": {
     "postinstall": "npm ddp"
   },
